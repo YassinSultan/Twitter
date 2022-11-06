@@ -1,0 +1,411 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    width: 27%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 0px 20px 150px ;
+    position: fixed;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;   
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: 25px;
+
+}
+.nav-links a:hover{
+    background-color: rgb(47, 51, 54);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.nav-links a span{
+    padding-left:10px ;
+}
+.tweet-btn{
+    color: white;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(28,155,240);
+    padding:15px 0px 15px 0px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
+.tweet-btn:hover{
+    background-color:rgba(28,155,240,0.9) ;
+}
+.user-info a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding: 10px;
+    transform: 0.5s ease;
+    -webkit-transform: 0.5s ease;
+    -moz-transform: 0.5s ease;
+    -ms-transform: 0.5s ease;
+    -o-transform: 0.5s ease;
+}
+.user-info a:hover{
+    background-color: rgba(47, 51, 54,0.6);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.user-img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.user-account{
+    padding-left: 10px;
+    text-align:left;
+}
+.user-acc{
+    font-weight: 100;
+    padding-right: 10px;
+    font-size: smaller;
+    color:rgb(56,59,61) ;
+}
+main{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    margin-left: 27%;
+    transition-duration: 1sGZG;
+}
+.main-flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;  
+}
+.main-feed{
+    
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    border-left: 1px solid rgb(47,51,54);
+    border-right: 1px solid rgb(47,51,54);
+}
+.main-bar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 15px;
+    position: sticky;
+    top: 0;
+}
+.main-bar a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.new-tweet{
+    padding:15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(255, 255, 255,0.5);
+}
+.new-tweet img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.new-tweet-datails{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.new-tweet-datails input{
+    width: 100%;
+    min-height: 40px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.new-tweet-datails input:enabled{
+    border-color: black;
+}
+.tweet-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.tweet-action ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.tweet-action ul li{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 20px;
+
+}
+.tweet-action ul li a{
+    color: rgb(28,155,240);
+}
+.tweet-action .tweet-btn{
+    width: 120px;
+    height: 50px;
+    align-items: center;
+}
+.tweet{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-bottom:0.5px solid rgba(255, 255, 255,0.5) ;
+}
+.tweet:hover{
+    background-color: rgba(58, 57, 57, 0.2);
+}
+.tweet-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.user-datails{
+    display: flex;
+    justify-content: row;
+}
+.user-name{
+    color: white;
+    padding-left: 10px;
+}
+.user-acc{
+    font-size: small;
+    padding-top: 3px;
+
+}
+.tweet-bar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255,0.5);
+}
+.tweet-text{
+    padding-left: 50px;
+    color: white;
+}
+.tweet-media{
+    width: 400px;
+    align-self:center;
+    padding-top: 20px;
+}
+.tweet-actions{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 50px 10px 50px;
+    color: rgb(68,71,74);
+}
+.tweet-actions i{
+    cursor: pointer;
+}
+.fa-solid.fa-comment:hover{
+    color: rgba(28,155,240,0.5);
+}
+.fa-solid.fa-retweet:hover{
+    color: rgba(123, 241, 176, 0.5);
+}
+.fa-solid.fa-heart:hover{
+    color: rgba(228, 30, 132, 0.5);
+}
+.fa-solid.fa-arrow-up-from-bracket:hover{
+    color: rgba(28,155,240,0.5);
+}
+.side-feed{
+    width: 40%;
+    height: fit-content;
+    padding: 10px 40px 70px 20px ;
+}
+.search-bar{
+    display: flex;
+    background-color: rgb(32,35,39);
+    padding: 10px;
+    align-items: center;
+    color:rgb(69,74,78) ;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    border-radius: 99px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+}
+.search-bar input{
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+    background-color:rgb(32,35,39) ;
+    border: none;
+    color: rgb(69,74,78);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.search-bar input:focus{
+    outline: none;
+    color: white;
+}
+.trending{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding:20px;
+    border-radius: 10px;
+    background-color:rgb(32,35,39);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.trending-title{
+    color: white;
+    font-weight:400px;
+    font-size: 20px;
+    padding-bottom: 20px; 
+}
+.trending-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.trending-datails{
+    display: flex;
+    flex-direction: column;
+}
+.trending-country{
+    color:rgb(69,74,78) ;
+    font-size: 15px;
+}
+.trending-text{
+    color:rgba(255, 255, 255,0.8) ;
+    font-size: 20px;
+}
+.trending-number{
+    color:rgb(69,74,78) ;
+    font-size: 15px;
+}
+.trending-part i{
+    color: rgb(69,74,78);
+    cursor: pointer;
+}
+.show-more{
+    color: rgb(28,155,240);
+    cursor: pointer;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding:20px;
+    border-radius: 10px;
+    background-color:rgb(32,35,39);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.follow-title{
+    color: white;
+    font-weight:400px;
+    font-size: 20px;
+    padding-bottom: 20px; 
+}
+.follow-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.follow-user a{
+    text-decoration: none;
+}
+.follow-user-info{
+    display: flex;
+    flex-direction: row;
+}
+.follow-user-datails{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.follow-user-datails .user-acc{
+     color: rgb(69,74,78);   
+}
+.follow-btn{
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 99px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+    cursor: pointer;
+}
+.follow-btn:hover{
+    background-color: rgb(230, 225, 225);
+
+}
+
+
